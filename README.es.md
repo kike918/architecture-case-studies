@@ -23,15 +23,15 @@ Cada caso debe explicar:
 - evidencia de validación;
 - aprendizajes.
 
-## Roadmap inicial
+## Roadmap de casos
 
 | Caso | Estado | Enfoque |
 |---|---|---|
-| FalconCDT Engagement Platform | Primera publicación planeada | White-label engagement, scoring, notificaciones y operación |
+| [FalconCDT Engagement Platform](cases/falconcdt-engagement/README.es.md) | Publicado v1 | White-label engagement, scoring, notificaciones y operación |
 | MicroPOS | Planeado | POS offline-first, edge y entornos de baja conectividad |
 | Normia | Después de evidencia de implementación | Operación alimentaria, cumplimiento, acciones correctivas y auditoría verificable |
 
-Los casos se publicarán progresivamente. Un borrador no se presenta como implementación terminada hasta que exista evidencia.
+Los casos se publican progresivamente. Un borrador no se presenta como implementación terminada hasta que exista evidencia.
 
 ## Principios de publicación
 
@@ -64,5 +64,5 @@ Actualizado cuando cambia la evidencia
 
 ## Estado
 
-**Fase:** Línea base del repositorio y arquitectura de publicación.  
-**Siguiente hito:** Publicar FalconCDT Engagement Platform como primer caso completo.
+**Fase:** Primer caso público publicado.  
+**Siguiente hito:** Revisar evidencia y alcance arquitectónico para el caso MicroPOS.
