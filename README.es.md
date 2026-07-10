@@ -10,18 +10,7 @@ Casos de estudio públicos y sanitizados sobre arquitectura de software, restric
 
 Presentar trabajo seleccionado de arquitectura en productos digitales, sistemas empresariales, aplicaciones offline-first, plataformas de engagement, automatización y trazabilidad.
 
-Cada caso debe explicar:
-
-- problema de negocio y contexto operativo;
-- restricciones;
-- drivers arquitectónicos;
-- límites del sistema;
-- decisiones principales;
-- alternativas consideradas;
-- trade-offs;
-- seguridad y privacidad;
-- evidencia de validación;
-- aprendizajes.
+Cada caso explica contexto de negocio, restricciones, drivers arquitectónicos, límites del sistema, decisiones principales, alternativas, trade-offs, seguridad, evidencia y aprendizajes.
 
 ## Roadmap de casos
 
@@ -29,9 +18,9 @@ Cada caso debe explicar:
 |---|---|---|
 | [FalconCDT Engagement Platform](cases/falconcdt-engagement/README.es.md) | Publicado v1 | White-label engagement, scoring, notificaciones y operación |
 | MicroPOS | Planeado | POS offline-first, edge y entornos de baja conectividad |
-| Normia | Después de evidencia de implementación | Operación alimentaria, cumplimiento, acciones correctivas y auditoría verificable |
+| [Normia](cases/normia/README.es.md) | Baseline arquitectónico publicado; implementación en curso | Operación alimentaria, cumplimiento, acciones correctivas y auditoría verificable |
 
-Los casos se publican progresivamente. Un borrador no se presenta como implementación terminada hasta que exista evidencia.
+Los casos se publican progresivamente. Un baseline arquitectónico no se presenta como implementación terminada ni validación productiva hasta que exista evidencia.
 
 ## Principios de publicación
 
@@ -64,5 +53,5 @@ Actualizado cuando cambia la evidencia
 
 ## Estado
 
-**Fase:** Primer caso público publicado.  
+**Fase:** Caso FalconCDT publicado; baseline arquitectónico de Normia publicado con evidencia explícita de implementación en curso.  
 **Siguiente hito:** Revisar evidencia y alcance arquitectónico para el caso MicroPOS.
