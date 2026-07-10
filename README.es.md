@@ -17,7 +17,7 @@ Cada caso explica contexto de negocio, restricciones, drivers arquitectónicos, 
 | Caso | Estado | Enfoque |
 |---|---|---|
 | [FalconCDT Engagement Platform](cases/falconcdt-engagement/README.es.md) | Publicado v1 | White-label engagement, scoring, notificaciones y operación |
-| MicroPOS | Planeado | POS offline-first, edge y entornos de baja conectividad |
+| [MicroPOS](cases/micropos/README.es.md) | Baseline arquitectónico publicado; piloto Raspberry Pi planificado | POS offline-first, edge, adapters ERP y resiliencia de conectividad |
 | [Normia](cases/normia/README.es.md) | Baseline arquitectónico publicado; implementación en curso | Operación alimentaria, cumplimiento, acciones correctivas y auditoría verificable |
 
 Los casos se publican progresivamente. Un baseline arquitectónico no se presenta como implementación terminada ni validación productiva hasta que exista evidencia.
@@ -53,5 +53,5 @@ Actualizado cuando cambia la evidencia
 
 ## Estado
 
-**Fase:** Caso FalconCDT publicado; baseline arquitectónico de Normia publicado con evidencia explícita de implementación en curso.  
-**Siguiente hito:** Revisar evidencia y alcance arquitectónico para el caso MicroPOS.
+**Fase:** FalconCDT publicado; Normia con baseline arquitectónico e implementación en curso; MicroPOS con baseline edge/offline-first y piloto Raspberry Pi planificado.  
+**Siguiente hito:** Ejecutar el laboratorio Raspberry Pi de MicroPOS y actualizar el registro de evidencia con resultados medidos.
