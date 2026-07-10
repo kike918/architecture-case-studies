@@ -10,18 +10,7 @@ Public, sanitized architecture case studies focused on real business constraints
 
 The goal is to present selected architecture work across digital products, business systems, offline-first applications, engagement platforms, automation and traceability.
 
-Each case study focuses on:
-
-- business problem and operating context;
-- constraints;
-- architectural drivers;
-- system boundaries;
-- major decisions;
-- alternatives considered;
-- trade-offs;
-- security and privacy considerations;
-- validation evidence;
-- lessons learned.
+Each case study focuses on business context, constraints, architectural drivers, system boundaries, major decisions, alternatives, trade-offs, security, validation evidence and lessons learned.
 
 ## Case roadmap
 
@@ -29,7 +18,7 @@ Each case study focuses on:
 |---|---|---|
 | [FalconCDT Engagement Platform](cases/falconcdt-engagement/README.md) | Published v1 | White-label engagement, scoring, notifications and operational delivery |
 | MicroPOS | Planned | Offline-first POS, edge deployment and low-connectivity environments |
-| Normia | Planned after implementation evidence | Food operations, compliance, corrective actions and verifiable audit trails |
+| [Normia](cases/normia/README.md) | Architecture baseline published; implementation in progress | Food operations, compliance, corrective actions and verifiable audit trails |
 
 The cases are published progressively. Draft cases are not treated as completed implementations until evidence exists.
 
@@ -84,17 +73,11 @@ Updated when evidence changes
 
 ## What this repository is not
 
-This repository is not:
-
-- a source-code mirror of private products;
-- a marketing brochure;
-- a place to publish secrets, infrastructure details or credentials;
-- a claim that every documented concept is already in production;
-- a substitute for product repositories, ADRs or internal documentation.
+This repository is not a source-code mirror of private products, a marketing brochure, a place to publish secrets, or a claim that every documented concept is already in production.
 
 ## Status
 
-**Phase:** First public case published.  
+**Phase:** FalconCDT case published; Normia architecture baseline published with explicit implementation-in-progress evidence.  
 **Next milestone:** Review evidence and architecture scope for the MicroPOS case study.
 
 ---
