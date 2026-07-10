@@ -1,6 +1,6 @@
 # FalconCDT Engagement Platform
 
-🌐 **Idiomas:** [English](README.md) · Español
+🌐 **Idiomas:** [English](README.md) · Español · [Català](README.ca.md)
 
 **Estado:** Caso publicado — resumen público y sanitizado de arquitectura basado en una plataforma B2B white-label de engagement operativa.
 
@@ -98,8 +98,6 @@ Integraciones externas
 
 ## Seguridad y privacidad
 
-Principios públicos documentados:
-
 - secretos fuera de Git;
 - debug productivo deshabilitado;
 - rutas privadas protegidas;
@@ -110,8 +108,6 @@ Principios públicos documentados:
 - acciones administrativas sensibles auditables.
 
 ## Evidencia
-
-La evidencia disponible respalda al menos las siguientes capacidades:
 
 | Capacidad | Nivel |
 |---|---|
@@ -139,23 +135,18 @@ No se publican afirmaciones no verificadas sobre ingresos, conversión, crecimie
 ## Aprendizajes
 
 ### Multi-instancia puede ser la decisión correcta al inicio
-
 Separar despliegues por cliente puede ser preferible cuando todavía se están validando diferencias operativas reales.
 
 ### Una sola fuente debe decidir la verdad oficial
-
 Los proveedores secundarios pueden enriquecer la experiencia, pero no deben competir por modificar el mismo hecho de negocio.
 
 ### Automatización no es sinónimo de dominio
-
 n8n puede disparar procesos y notificaciones; scoring, ranking y estados permanecen en la aplicación.
 
 ### Operación también es arquitectura
-
 Backups, rollback, patches y checkpoints de release forman parte del diseño técnico real.
 
 ### La privacidad importa también en productos de engagement
-
 Un ranking público no obliga a exponer el historial detallado del participante.
 
 ## Próximas preguntas arquitectónicas
@@ -169,10 +160,10 @@ Un ranking público no obliga a exponer el historial detallado del participante.
 
 ## Documentos relacionados
 
-- [`ARCHITECTURE.md`](ARCHITECTURE.md)
-- [`DECISIONS.md`](DECISIONS.md)
-- [`SECURITY_AND_PRIVACY.md`](SECURITY_AND_PRIVACY.md)
-- [`EVIDENCE.md`](EVIDENCE.md)
+- [`ARCHITECTURE.es.md`](ARCHITECTURE.es.md)
+- [`DECISIONS.es.md`](DECISIONS.es.md)
+- [`SECURITY_AND_PRIVACY.es.md`](SECURITY_AND_PRIVACY.es.md)
+- [`EVIDENCE.es.md`](EVIDENCE.es.md)
 
 ---
 
