@@ -23,15 +23,15 @@ Each case study focuses on:
 - validation evidence;
 - lessons learned.
 
-## Initial case roadmap
+## Case roadmap
 
 | Case | Status | Focus |
 |---|---|---|
-| FalconCDT Engagement Platform | Planned first publication | White-label engagement, scoring, notifications and operational delivery |
+| [FalconCDT Engagement Platform](cases/falconcdt-engagement/README.md) | Published v1 | White-label engagement, scoring, notifications and operational delivery |
 | MicroPOS | Planned | Offline-first POS, edge deployment and low-connectivity environments |
 | Normia | Planned after implementation evidence | Food operations, compliance, corrective actions and verifiable audit trails |
 
-The cases will be published progressively. Draft cases are not treated as completed implementations until evidence exists.
+The cases are published progressively. Draft cases are not treated as completed implementations until evidence exists.
 
 ## Repository structure
 
@@ -94,8 +94,8 @@ This repository is not:
 
 ## Status
 
-**Phase:** Repository baseline and publication architecture.  
-**Next milestone:** Publish FalconCDT Engagement Platform as the first complete case study.
+**Phase:** First public case published.  
+**Next milestone:** Review evidence and architecture scope for the MicroPOS case study.
 
 ---
 
