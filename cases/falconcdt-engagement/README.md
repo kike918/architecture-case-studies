@@ -1,5 +1,7 @@
 # FalconCDT Engagement Platform
 
+🌐 **Languages:** English · [Español](README.es.md) · [Català](README.ca.md)
+
 **Status:** Deployed case study — public-safe architecture summary based on an operational B2B white-label engagement platform.
 
 ## 1. Executive summary
@@ -16,20 +18,7 @@ The current solution uses a lightweight PHP/MySQL architecture with service and 
 
 The platform serves engagement scenarios where a business or community wants to run a branded participation dynamic around predictions, challenges, rankings, rewards or private events.
 
-Typical requirements include:
-
-- participant registration and authentication;
-- independent phases with separate rankings;
-- deadline enforcement;
-- scoring rules;
-- public ranking without exposing private prediction history;
-- administrative visibility;
-- configurable prizes and commercial settings;
-- email and Telegram communication;
-- client-specific branding;
-- audit trails;
-- operational dashboards;
-- independent deployment per client.
+Typical requirements include participant registration, independent phases, scoring, rankings, private prediction history, administrative visibility, configurable rewards, notifications, branding, audit trails and independent deployment per client.
 
 The first operational implementation was a private 2026 football prediction experience. The product direction then expanded toward a reusable B2B engagement platform rather than a one-off tournament site.
 
@@ -40,37 +29,33 @@ A reusable engagement platform must reconcile two competing needs:
 1. **Product reuse:** shared scoring, ranking, administration, notification and audit capabilities.
 2. **Client isolation:** different branding, rules, participants, prizes, configuration and operational timelines.
 
-The architecture also needed to remain maintainable for a small delivery team and deployable on practical shared/cloud hosting without introducing infrastructure that exceeded the needs of the initial operating model.
+The architecture also needed to remain maintainable for a small delivery team and deployable on practical hosting without introducing infrastructure that exceeded the needs of the initial operating model.
 
 ## 4. Constraints
 
-The main constraints were:
-
 - small development and operating team;
-- need for fast delivery and iteration;
-- real client-specific branding and configuration;
+- fast delivery and iteration;
+- client-specific branding and configuration;
 - limited justification for premature multi-tenancy;
-- shared-hosting deployment constraints;
+- hosting constraints;
 - external sports-data API limits and inconsistency;
-- need to preserve user privacy around prediction history;
-- need for auditable scoring and administrative actions;
-- cron reliability concerns in the hosting environment;
-- notification channels with different delivery characteristics;
-- requirement to avoid production secrets in source control.
+- privacy of prediction history;
+- auditable scoring and administrative actions;
+- cron reliability concerns;
+- channels with different delivery characteristics;
+- production secrets kept out of source control.
 
 ## 5. Architectural drivers
 
-The strongest drivers were:
-
-- **deployment simplicity**;
-- **operational isolation between clients**;
-- **auditability**;
-- **maintainability**;
-- **data-source clarity**;
-- **controlled automation**;
-- **privacy-aware ranking design**;
-- **extensibility without framework overreach**;
-- **cost control**.
+- deployment simplicity;
+- client isolation;
+- auditability;
+- maintainability;
+- data-source clarity;
+- controlled automation;
+- privacy-aware ranking design;
+- extensibility without framework overreach;
+- cost control.
 
 ## 6. System boundaries
 
@@ -82,9 +67,9 @@ The strongest drivers were:
 - deadline validation and locking;
 - scoring and rankings;
 - phase management;
-- payments/registration tracking where applicable;
+- registration/payment tracking where applicable;
 - winner and prize management;
-- administrative dashboards;
+- admin dashboards;
 - internal messaging;
 - notification templates and queues;
 - audit logs;
@@ -94,10 +79,10 @@ The strongest drivers were:
 ### External systems
 
 - official sports-data provider;
-- optional match-detail data provider;
+- optional match-detail provider;
 - SMTP provider;
 - Telegram Bot API;
-- n8n for external orchestration;
+- n8n orchestration;
 - future WhatsApp bridge.
 
 The frontend does not directly call external sports APIs. Runtime application data is normalized into MySQL first.
@@ -171,32 +156,13 @@ See [`SECURITY_AND_PRIVACY.md`](SECURITY_AND_PRIVACY.md).
 
 ## 10. Delivery and operations
 
-The deployment model currently favors independent client installations. Each instance can have its own:
+The deployment model favors independent client installations, each with its own database, configuration, branding, rules, participants, prizes and notification settings.
 
-- database;
-- configuration;
-- branding;
-- rules;
-- participants;
-- prizes;
-- notification settings.
-
-This creates stronger operational isolation and simpler reasoning at the cost of duplicated deployment and maintenance work.
-
-Operational practices include:
-
-- documented database patches;
-- backup and rollback procedures;
-- release checkpoints;
-- deployment checklists;
-- manual validation in the target hosting environment;
-- protected automation endpoints for n8n rather than direct database access.
+Operational practices include documented database patches, backup and rollback procedures, release checkpoints, deployment checklists, target-environment validation and protected automation endpoints for n8n rather than direct database access.
 
 ## 11. AI-assisted development
 
 The project has used AI-assisted development for scoped implementation, documentation, refactoring and operational workflow design.
-
-The intended governance model is:
 
 ```text
 Issue / defined scope
@@ -218,8 +184,6 @@ AI assistance does not replace production approval, secrets management, security
 
 Evidence is summarized in [`EVIDENCE.md`](EVIDENCE.md).
 
-Current evidence supports the following classifications:
-
 | Capability | Evidence level |
 |---|---|
 | Authentication and role-protected routes | Deployed |
@@ -239,61 +203,57 @@ Current evidence supports the following classifications:
 
 ## 13. Results
 
-The strongest validated result is architectural rather than promotional: the platform evolved from one real engagement dynamic into a reusable multi-instance product baseline while preserving operational simplicity.
+The strongest validated result is architectural: the platform evolved from one real engagement dynamic into a reusable multi-instance product baseline while preserving operational simplicity.
 
-Public-safe evidence confirms that the platform supports:
-
-- independent phases;
-- scoring and rankings;
-- administrative operations;
-- audit trails;
-- notification workflows;
-- external result synchronization;
-- client-specific configuration and branding;
-- production-oriented hardening and rollback documentation.
+Public-safe evidence confirms independent phases, scoring and rankings, administrative operations, audit trails, notification workflows, external result synchronization, client-specific configuration and production-oriented hardening.
 
 No unsupported business-performance claims are included in this public case.
 
 ## 14. Lessons learned
 
-### 1. Multi-instance can be the correct first architecture
+### Multi-instance can be the correct first architecture
+A separate deployment per client can be preferable to multi-tenancy while real client differences are still being validated.
 
-A separate deployment per client can be preferable to multi-tenancy when the product is still validating real client differences and operational ownership.
+### One provider should own official truth
+One provider decides official results; another may enrich presentation without affecting scoring.
 
-### 2. One provider should own official truth
+### Automation must not own the domain
+n8n can trigger jobs and notifications, but scoring, ranking and phase state remain inside the application domain.
 
-Using multiple external providers is useful only when responsibilities are explicit. One provider decides official results; another may enrich presentation without affecting scoring.
+### Operational documentation is part of architecture
+Backup, rollback, patch sequencing and release checkpoints are architectural concerns.
 
-### 3. Automation must not own the domain
-
-n8n can trigger jobs, retries and notifications, but core scoring, ranking and phase state remain inside the application domain.
-
-### 4. Operational documentation is part of architecture
-
-Backup, rollback, patch sequencing and release checkpoints are architectural concerns when deployment environments are constrained.
-
-### 5. Privacy boundaries matter even in engagement products
-
+### Privacy boundaries matter even in engagement products
 A public ranking does not require exposing participant prediction history.
 
 ## 15. Next architectural questions
 
-The main questions that could trigger future evolution are:
-
 - At what number of clients does multi-instance operational cost justify multi-tenancy?
 - Which configuration elements belong in data, code or deployment automation?
-- Should notifications evolve into a dedicated provider abstraction with retry policies and delivery metrics?
-- When does queue processing require a dedicated worker model?
-- Should deployment move from shared hosting toward containerized standardized environments?
-- What telemetry is needed before introducing deeper observability infrastructure?
-- How should the platform generalize beyond sports predictions into broader engagement mechanics without weakening the domain model?
+- When does queue processing require dedicated workers?
+- Should deployment move toward containerized environments?
+- What telemetry is needed before deeper observability infrastructure?
+- How should the platform generalize beyond sports predictions without weakening the domain model?
 
 ## Related documents
 
+### English
 - [`ARCHITECTURE.md`](ARCHITECTURE.md)
 - [`DECISIONS.md`](DECISIONS.md)
 - [`SECURITY_AND_PRIVACY.md`](SECURITY_AND_PRIVACY.md)
 - [`EVIDENCE.md`](EVIDENCE.md)
+
+### Español
+- [`ARCHITECTURE.es.md`](ARCHITECTURE.es.md)
+- [`DECISIONS.es.md`](DECISIONS.es.md)
+- [`SECURITY_AND_PRIVACY.es.md`](SECURITY_AND_PRIVACY.es.md)
+- [`EVIDENCE.es.md`](EVIDENCE.es.md)
+
+### Català
+- [`ARCHITECTURE.ca.md`](ARCHITECTURE.ca.md)
+- [`DECISIONS.ca.md`](DECISIONS.ca.md)
+- [`SECURITY_AND_PRIVACY.ca.md`](SECURITY_AND_PRIVACY.ca.md)
+- [`EVIDENCE.ca.md`](EVIDENCE.ca.md)
 
 ---
 
