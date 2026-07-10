@@ -17,10 +17,10 @@ Each case study focuses on business context, constraints, architectural drivers,
 | Case | Status | Focus |
 |---|---|---|
 | [FalconCDT Engagement Platform](cases/falconcdt-engagement/README.md) | Published v1 | White-label engagement, scoring, notifications and operational delivery |
-| MicroPOS | Planned | Offline-first POS, edge deployment and low-connectivity environments |
+| [MicroPOS](cases/micropos/README.md) | Architecture baseline published; Raspberry Pi pilot planned | Offline-first POS, edge deployment, ERP adapters and low-connectivity resilience |
 | [Normia](cases/normia/README.md) | Architecture baseline published; implementation in progress | Food operations, compliance, corrective actions and verifiable audit trails |
 
-The cases are published progressively. Draft cases are not treated as completed implementations until evidence exists.
+The cases are published progressively. Architecture baselines are not treated as production validation until evidence exists.
 
 ## Repository structure
 
@@ -77,8 +77,8 @@ This repository is not a source-code mirror of private products, a marketing bro
 
 ## Status
 
-**Phase:** FalconCDT case published; Normia architecture baseline published with explicit implementation-in-progress evidence.  
-**Next milestone:** Review evidence and architecture scope for the MicroPOS case study.
+**Phase:** FalconCDT deployed case published; Normia architecture baseline published with implementation in progress; MicroPOS edge/offline-first baseline published with Raspberry Pi pilot planned.  
+**Next milestone:** Execute the MicroPOS Raspberry Pi lab and update its evidence register with measured results.
 
 ---
 
