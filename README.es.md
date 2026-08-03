@@ -8,7 +8,7 @@ Casos de estudio públicos y sanitizados sobre arquitectura de software, restric
 
 ## Propósito
 
-Presentar trabajo seleccionado de arquitectura en productos digitales, sistemas empresariales, aplicaciones offline-first, plataformas de engagement, automatización y trazabilidad.
+Presentar trabajo seleccionado de arquitectura en productos digitales, sistemas empresariales, aplicaciones offline-first, plataformas de engagement, automatización, distribución controlada y trazabilidad.
 
 Cada caso explica contexto de negocio, restricciones, drivers arquitectónicos, límites del sistema, decisiones principales, alternativas, trade-offs, seguridad, evidencia y aprendizajes.
 
@@ -17,6 +17,7 @@ Cada caso explica contexto de negocio, restricciones, drivers arquitectónicos, 
 | Caso | Estado | Enfoque |
 |---|---|---|
 | [FalconCDT Engagement Platform](cases/falconcdt-engagement/README.es.md) | Publicado v1 | White-label engagement, scoring, notificaciones y operación |
+| [DCP DownloadGate](cases/dcp-downloadgate/README.es.md) | Publicado; evidencia desplegada | Distribución controlada de archivos privados, accesos temporales, límites protegidos en hosting y auditabilidad |
 | [MicroPOS](cases/micropos/README.es.md) | Baseline arquitectónico publicado; piloto Raspberry Pi planificado | POS offline-first, edge, adapters ERP y resiliencia de conectividad |
 | [Normia](cases/normia/README.es.md) | Baseline arquitectónico publicado; implementación en curso | Operación alimentaria, cumplimiento, acciones correctivas y auditoría verificable |
 
@@ -53,5 +54,5 @@ Actualizado cuando cambia la evidencia
 
 ## Estado
 
-**Fase:** FalconCDT publicado; Normia con baseline arquitectónico e implementación en curso; MicroPOS con baseline edge/offline-first y piloto Raspberry Pi planificado.  
+**Fase:** FalconCDT y DCP DownloadGate publicados como casos desplegados; Normia con baseline arquitectónico e implementación en curso; MicroPOS con baseline edge/offline-first y piloto Raspberry Pi planificado.  
 **Siguiente hito:** Ejecutar el laboratorio Raspberry Pi de MicroPOS y actualizar el registro de evidencia con resultados medidos.

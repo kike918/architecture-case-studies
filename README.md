@@ -8,7 +8,7 @@ Public, sanitized architecture case studies focused on real business constraints
 
 ## Purpose
 
-The goal is to present selected architecture work across digital products, business systems, offline-first applications, engagement platforms, automation and traceability.
+The goal is to present selected architecture work across digital products, business systems, offline-first applications, engagement platforms, automation, controlled distribution and traceability.
 
 Each case study focuses on business context, constraints, architectural drivers, system boundaries, major decisions, alternatives, trade-offs, security, validation evidence and lessons learned.
 
@@ -17,6 +17,7 @@ Each case study focuses on business context, constraints, architectural drivers,
 | Case | Status | Focus |
 |---|---|---|
 | [FalconCDT Engagement Platform](cases/falconcdt-engagement/README.md) | Published v1 | White-label engagement, scoring, notifications and operational delivery |
+| [DCP DownloadGate](cases/dcp-downloadgate/README.md) | Published; deployed evidence | Controlled private file distribution, temporary access, protected hosting boundaries and auditability |
 | [MicroPOS](cases/micropos/README.md) | Architecture baseline published; Raspberry Pi pilot planned | Offline-first POS, edge deployment, ERP adapters and low-connectivity resilience |
 | [Normia](cases/normia/README.md) | Architecture baseline published; implementation in progress | Food operations, compliance, corrective actions and verifiable audit trails |
 
@@ -31,6 +32,7 @@ architecture-case-studies/
 ├── CONTRIBUTING.md
 ├── SECURITY.md
 ├── cases/
+│   ├── dcp-downloadgate/
 │   ├── falconcdt-engagement/
 │   ├── micropos/
 │   └── normia/
@@ -77,7 +79,7 @@ This repository is not a source-code mirror of private products, a marketing bro
 
 ## Status
 
-**Phase:** FalconCDT deployed case published; Normia architecture baseline published with implementation in progress; MicroPOS edge/offline-first baseline published with Raspberry Pi pilot planned.  
+**Phase:** FalconCDT and DCP DownloadGate deployed cases published; Normia architecture baseline published with implementation in progress; MicroPOS edge/offline-first baseline published with Raspberry Pi pilot planned.  
 **Next milestone:** Execute the MicroPOS Raspberry Pi lab and update its evidence register with measured results.
 
 ---
