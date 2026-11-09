@@ -35,7 +35,8 @@ architecture-case-studies/
 │   ├── dcp-downloadgate/
 │   ├── falconcdt-engagement/
 │   ├── micropos/
-│   └── normia/
+│   ├── normia/
+│   └── tazario-recipes/
 ├── templates/
 │   ├── CASE_STUDY_TEMPLATE.md
 │   └── ADR_TEMPLATE.md
@@ -51,7 +52,7 @@ The following candidates require separate evidence, architecture and sanitizatio
 | Candidate | Editorial status | Proposed architectural focus |
 |---|---|---|
 | Rewi | Candidate — evidence review pending | Laravel SaaS, business isolation, payments, operational flows and deployment gates |
-| Tazario Recipes | Candidate — GCP deployment prepared; evidence review pending | React/Hono/Drizzle monorepo, upstream MIT attribution, isolated persistence, documented deployment and pending production validation |
+| [Tazario Recipes](cases/tazario-recipes/README.md) | Published architecture case — GCP deployment prepared, production unverified | React/Hono/Drizzle monorepo, upstream MIT attribution, isolated persistence, deployment plan and evidence limits |
 | DCP Flow | Candidate — evidence review pending | Human + AI engineering governance, context-specific blueprints, skills and quality gates |
 | SipDolce Labs | Candidate — scope review pending | Astro-based editorial architecture, bilingual content and integrations |
 
@@ -92,7 +93,7 @@ This repository is not a source-code mirror of private products, a marketing bro
 
 ## Status
 
-**Phase:** FalconCDT and DCP DownloadGate deployed cases published; Normia architecture baseline published; development paused; MicroPOS edge/offline-first baseline published with Raspberry Pi pilot planned.  
+**Phase:** FalconCDT and DCP DownloadGate deployed cases published; Normia architecture baseline published with development paused; MicroPOS edge/offline-first baseline published with Raspberry Pi pilot planned. Tazario Recipes is published with documented deployment preparation and explicitly unverified production operations.  
 **Next milestone:** Execute the MicroPOS Raspberry Pi lab and update its evidence register with measured results.
 
 ---
