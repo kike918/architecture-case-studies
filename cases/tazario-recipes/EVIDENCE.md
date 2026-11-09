@@ -1,6 +1,6 @@
 # Tazario Recipes — Evidence Register
 
-**Review cut:** 2026-11-08. **Publication status:** draft for human review.
+**Review cut:** 2026-11-08. **Publication status:** published with human disclosure approval (2026-11-09); technical evidence gates remain open.
 
 | Claim | Evidence basis reviewed | Classification | Limit |
 |---|---|---|---|
@@ -14,7 +14,7 @@
 
 ## Promotion gates
 
-- [ ] Human disclosure/sanitization approval.
+- [x] Human disclosure/sanitization approval (2026-11-09).
 - [ ] Verify all public claims against a specific product Git SHA and executed QA evidence.
 - [ ] Confirm consent and optional-tracker issues, or explicitly accept documented risk before a relevant release.
 - [ ] Verify media provenance/attribution for assets distributed publicly.
