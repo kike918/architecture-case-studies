@@ -29,6 +29,10 @@ Los ocho casos están **publicados editorialmente**, pero tienen niveles de evid
 
 **No hay candidatos inéditos listados en este corte.** Todo futuro candidato requiere evidencia, sanitización, revisión arquitectónica y aprobación de publicación. Los cinco niveles técnicos están en el [Estándar de publicación](docs/PUBLICATION_STANDARD.md); los casos de metodología usan N/A.
 
+## Auditoría documental más reciente
+
+[Auditoría correctiva del portafolio GitHub — 2026-11-09](docs/PORTFOLIO_AUDIT_2026-11-09.md): resultados, límites de evidencia, enlaces verificados y comprobaciones operativas todavía pendientes.
+
 ## Principios de publicación
 
 - Evidencia antes que afirmaciones.
