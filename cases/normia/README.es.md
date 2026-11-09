@@ -2,7 +2,7 @@
 
 🌐 **Idiomas:** [English](README.md) · Español · [Català](README.ca.md)
 
-**Estado:** Caso de arquitectura e implementación en progreso. Sprint 0, bootstrap técnico y discovery del piloto están en curso.
+**Estado:** Pausado / mantenimiento. Se conservan el baseline arquitectónico, Sprint 0 y bootstrap técnico; no hay implementación activa ni discovery del piloto en curso.
 
 ## Resumen ejecutivo
 
@@ -12,7 +12,7 @@ El producto se diseña desde un piloto real y no desde una abstracción SaaS gen
 
 La arquitectura actual es un monolito modular Laravel con MySQL como fuente de verdad operacional, UX web mobile-first, contexto QR, Telegram como canal, n8n como orquestador y anclaje agregado opcional de evidencia de auditoría en Polygon PoS.
 
-**Nivel de evidencia:** baseline de arquitectura + prototipo UX de referencia + implementación en curso. No validado en producción.
+**Nivel de evidencia:** baseline de arquitectura + prototipo UX de referencia + bootstrap técnico conservado. No validado en producción.
 
 ## Contexto y problema
 
@@ -121,8 +121,8 @@ La IA no aprueba producción ni reemplaza revisión humana.
 | Arquitectura MVP | Baseline congelado |
 | Golden Flow | Definido, implementación pendiente |
 | Prototipo UX | Referencia no productiva |
-| Discovery del piloto | En curso |
-| Monolito modular | Baseline / bootstrap en curso |
+| Discovery del piloto | Pausado / no completado |
+| Monolito modular | Baseline / bootstrap conservado |
 | Flujo tarea-temperatura-desviación | Vertical slice planificado |
 | CAPA y verificación | Modelo de dominio definido |
 | Audit ledger | Arquitectura definida, implementación pendiente |
@@ -149,4 +149,4 @@ La IA no aprueba producción ni reemplaza revisión humana.
 
 ---
 
-Este caso distingue explícitamente arquitectura documentada, prototipos de referencia, implementación en curso y validación futura. Normia no se presenta como validado en producción.
+Este caso distingue explícitamente arquitectura documentada, prototipos de referencia, bootstrap técnico conservado y validación futura. Normia no se presenta como validado en producción.
