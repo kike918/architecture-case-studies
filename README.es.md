@@ -18,7 +18,7 @@ Cada caso explica contexto de negocio, restricciones, drivers arquitectónicos, 
 |---|---|---|
 | [FalconCDT Engagement Platform](cases/falconcdt-engagement/README.es.md) | Publicado v1 | White-label engagement, scoring, notificaciones y operación |
 | [DCP DownloadGate](cases/dcp-downloadgate/README.es.md) | Publicado; evidencia desplegada | Distribución controlada de archivos privados, accesos temporales, límites protegidos en hosting y auditabilidad |
-| [MicroPOS](cases/micropos/README.es.md) | Baseline arquitectónico publicado; piloto Raspberry Pi planificado | POS offline-first, edge, adapters ERP y resiliencia de conectividad |
+| [MicroPOS](cases/micropos/README.es.md) | Web comercial/mini CRM documentados; baseline POS edge publicado, piloto Raspberry Pi pendiente | Operación comercial Astro/PHP/SQLite y, por separado, POS offline-first y adapters ERP propuestos |
 | [Normia](cases/normia/README.es.md) | Baseline arquitectónico publicado; desarrollo pausado | Operación alimentaria, cumplimiento, acciones correctivas y auditoría verificable |
 
 Los casos se publican progresivamente. Un baseline arquitectónico no se presenta como implementación terminada ni validación productiva hasta que exista evidencia.
