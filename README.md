@@ -33,6 +33,7 @@ architecture-case-studies/
 ├── SECURITY.md
 ├── cases/
 │   ├── dcp-downloadgate/
+│   ├── dcp-flow/
 │   ├── falconcdt-engagement/
 │   ├── micropos/
 │   ├── normia/
@@ -46,15 +47,15 @@ architecture-case-studies/
     └── SANITIZATION_GUIDE.md
 ```
 
-## Planned case studies (not yet published)
+## Additional published cases and candidates
 
-The following candidates require separate evidence, architecture and sanitization reviews before publication:
+The following cases include published technical narratives and unpublished candidates. Publication does not imply production validation:
 
-| Candidate | Editorial status | Proposed architectural focus |
+| Case / candidate | Editorial status | Architectural focus |
 |---|---|---|
 | [Rewi v0.2.1](cases/rewi/README.md) | Published case — Deployed (2026-11-03); not Production validated | Laravel loyalty SaaS, tenancy boundaries, scoped integrations, asynchronous work and release evidence |
 | [Tazario Recipes](cases/tazario-recipes/README.md) | Published architecture case — GCP deployment prepared, production unverified | React/Hono/Drizzle monorepo, upstream MIT attribution, isolated persistence, deployment plan and evidence limits |
-| DCP Flow | Candidate — evidence review pending | Human + AI engineering governance, context-specific blueprints, skills and quality gates |
+| [DCP Flow](cases/dcp-flow/README.md) | Published methodology case — documented application, outcomes not quantified | Human + AI engineering governance, solution discovery, stack-specific blueprints, skills and evidence-driven gates |
 | SipDolce Labs | Candidate — scope review pending | Astro-based editorial architecture, bilingual content and integrations |
 
 A candidate is not a published case or a production-validation claim. [DCP Flow documentation](https://dcpflow.digitalconsultingplus.co/) provides public methodological context.

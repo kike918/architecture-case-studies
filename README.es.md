@@ -23,15 +23,15 @@ Cada caso explica contexto de negocio, restricciones, drivers arquitectónicos, 
 
 Los casos se publican progresivamente. Un baseline arquitectónico no se presenta como implementación terminada ni validación productiva hasta que exista evidencia.
 
-## Casos candidatos (todavía no publicados)
+## Casos adicionales publicados y candidatos
 
-Los siguientes candidatos requieren revisión independiente de evidencia, arquitectura y sanitización antes de publicarse:
+Los siguientes casos incluyen trabajos técnicos publicados y candidatos todavía sin publicar. Publicación no equivale a validación productiva:
 
-| Candidato | Estado editorial | Enfoque arquitectónico propuesto |
+| Caso / candidato | Estado editorial | Enfoque arquitectónico |
 |---|---|---|
 | [Rewi v0.2.1](cases/rewi/README.es.md) | Caso publicado — Desplegado (2026-11-03); no validado en producción | SaaS Laravel de fidelización, aislamiento de negocios, integraciones por ámbito, colas y evidencia de release |
 | [Tazario Recipes](cases/tazario-recipes/README.es.md) | Caso de arquitectura publicado — despliegue GCP preparado, producción sin verificar | Monorepo React/Hono/Drizzle, atribución MIT, persistencia aislada, plan de despliegue y límites de evidencia |
-| DCP Flow | Candidato — pendiente revisión de evidencia | Gobierno de ingeniería humano + IA, blueprints por contexto, Skills y Quality Gates |
+| [DCP Flow](cases/dcp-flow/README.es.md) | Caso metodológico publicado — aplicación documentada, resultados no cuantificados | Gobierno humano + IA, evaluación de soluciones, blueprints por stack, skills y gates basados en evidencia |
 | SipDolce Labs | Candidato — pendiente definir alcance | Arquitectura editorial Astro, contenido bilingüe e integraciones |
 
 Ser candidato no equivale a un caso publicado ni a validación productiva. La [documentación DCP Flow](https://dcpflow.digitalconsultingplus.co/) proporciona contexto metodológico público.
