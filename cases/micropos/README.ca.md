@@ -19,6 +19,16 @@ La web comercial gestiona clients potencials i pagaments comercials; el POS edge
 
 Llegiu [EVIDENCE.ca.md](EVIDENCE.ca.md) per consultar les limitacions. La resta del document descriu l'arquitectura objectiu del POS edge, no un inventari de components en producció.
 
+## Revisió arquitectònica — restriccions, seguretat i qüestions obertes
+
+**Context i restriccions.** Els petits negocis tenen pressupostos limitats, connexió variable i poca capacitat d'administrar hardware. Una web de captació comercial no demostra que existeixi un registre de vendes local resilient.
+
+**Seguretat i privadesa.** El mini CRM tracta dades de contactes comercials i processos associats a pagaments; el POS edge previst tractaria vendes locals i possiblement dades personals. Cada línia necessita permisos delimitats, secrets aïllats, retenció, auditoria i recuperació comprovada. Els controls de la web no validen automàticament els del POS edge.
+
+**Alternatives i compromisos.** Un POS només cloud exigeix connectivitat; executar un ERP complet a cada node incrementa el manteniment. Un nucli de transaccions locals amb adaptadors ERP podria donar continuïtat, però afegeix conflictes de sincronització, desgast del disc, conciliació i suport. Cal validar-ho al pilot.
+
+**Lliurament i preguntes pendents.** Per acceptar el pilot fan falta versions de hardware/software, proves de venda offline i impressió, reinici, restauració real, idempotència, conciliació de cues, observacions d'usuaris i registre de fallades. El diagrama i el catàleg de scripts no són evidència d'execució.
+
 ## Mapa de conformitat amb l'estàndard de publicació
 
 Els 14 temes obligatoris s'expliquen en aquest document i en els annexos vinculats:
