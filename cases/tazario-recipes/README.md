@@ -2,7 +2,7 @@
 
 🌐 **Languages:** English · [Español](README.es.md)
 
-**Status:** Public-review candidate (sanitized draft). **Evidence level:** Architecture and deployment preparation documented; production deployment and sustained operation **not verified**. The underlying product source remains private.
+**Status:** Published sanitized architecture case (human disclosure review approved 2026-11-09). **Evidence level:** Architecture and deployment preparation documented; production deployment and sustained operation **not verified**. The underlying product source remains private.
 
 ## 1. Executive summary
 
@@ -122,4 +122,4 @@ The concrete outcome is a documented product-specific architecture and an operat
 
 ## Publication note
 
-This text is a proposed sanitized case. No product source code, private infrastructure values, personal information, internal file paths, secrets, customer records or detailed implementation of sensitive controls are reproduced. A human sanitization and evidence review is required before merging it into the public portfolio.
+This is a published sanitized case. No product source code, private infrastructure values, personal information, internal file paths, secrets, customer records or detailed implementation of sensitive controls are reproduced. Human approval for publication was given on 2026-11-09; outstanding technical evidence remains explicitly unverified.
