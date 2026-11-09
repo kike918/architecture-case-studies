@@ -47,6 +47,10 @@ architecture-case-studies/
 └── docs/PUBLICATION_STANDARD.md
 ```
 
+## Latest documentation audit
+
+[Corrective GitHub portfolio audit — 2026-11-09](docs/PORTFOLIO_AUDIT_2026-11-09.md) records evidence limits, link-check results and remaining external/runtime validation gates.
+
 ## Publication principles
 
 - Evidence before claims.
