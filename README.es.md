@@ -30,7 +30,7 @@ Los siguientes candidatos requieren revisión independiente de evidencia, arquit
 | Candidato | Estado editorial | Enfoque arquitectónico propuesto |
 |---|---|---|
 | Rewi | Candidato — pendiente revisión de evidencia | SaaS Laravel, aislamiento de negocios, pagos, operación y compuertas de despliegue |
-| Tazario Recipes | Candidato — pendiente revisión de evidencia | Monorepo React/Hono/Drizzle, separación de upstream, atribución, datos y QA |
+| Tazario Recipes | Candidato — despliegue GCP preparado; revisión de evidencia pendiente | Monorepo React/Hono/Drizzle, atribución MIT de upstream, persistencia aislada, despliegue documentado y validación productiva pendiente |
 | DCP Flow | Candidato — pendiente revisión de evidencia | Gobierno de ingeniería humano + IA, blueprints por contexto, Skills y Quality Gates |
 | SipDolce Labs | Candidato — pendiente definir alcance | Arquitectura editorial Astro, contenido bilingüe e integraciones |
 
