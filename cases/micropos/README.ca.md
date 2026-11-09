@@ -2,7 +2,22 @@
 
 🌐 **Idiomes:** [English](README.md) · [Español](README.es.md) · Català
 
-**Estat:** Baseline arquitectònic publicat; pilot edge amb Raspberry Pi planificat. Els adapters ERP i els scripts operatius estan definits com a objectius d’implementació, no com a capacitats productives validades.
+**Estat:** web comercial i mini CRM implementats segons la documentació; arquitectura POS edge publicada com a baseline, pilot Raspberry Pi pendent. No es reclama validació productiva del POS edge.
+
+## Actualització d'evidència — dues línies diferenciades (2026-11-09)
+
+La web comercial i el mini CRM documentats a `MicroPos-web` són una línia diferent del motor POS edge proposat. No s'han de confondre els seus resultats.
+
+| Línia | Evidència documentada | Encara no demostrat |
+|---|---|---|
+| Web comercial i mini CRM | Web Astro SSG ES/EN/CA, PHP/SQLite, API v1, pagaments manuals/Bold, outbox/webhooks i proves reals d'integració amb n8n | Auditoria independent de totes les funcions productives, cobraments live generalitzats o disponibilitat sostinguda |
+| POS edge/offline-first | Arquitectura, ADR, estratègia ERP i pla de pilot Raspberry Pi | Venda offline real, impressió fiable, persistència i restauració, sincronització sense duplicats, adaptadors ERP i pilot completat |
+
+La web comercial gestiona clients potencials i pagaments comercials; el POS edge previst gestionaria les vendes locals del negoci. El bon funcionament d'un webhook del mini CRM **no** valida la sincronització de vendes del POS edge.
+
+**Escala canònica de maduresa:** web comercial — evidència documental d'implementació i desplegament de la superfície pública (**Deployed**, limitada a la web; sense validació productiva sostinguda). POS edge — **Concept** amb disseny documentat, i pilot encara no executat.
+
+Llegiu [EVIDENCE.ca.md](EVIDENCE.ca.md) per consultar les limitacions. La resta del document descriu l'arquitectura objectiu del POS edge, no un inventari de components en producció.
 
 ## Resum executiu
 
