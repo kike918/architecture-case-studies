@@ -17,6 +17,16 @@
 
 Ver el detalle en [EVIDENCE.es.md](EVIDENCE.es.md). El resto del documento describe la **arquitectura objetivo edge**, no un inventario de implementación.
 
+## Evaluación arquitectónica — restricciones, seguridad, compromisos y dudas
+
+**Contexto y restricciones.** Los pequeños negocios tienen presupuestos limitados, conectividad variable y poca capacidad de administrar equipos. Una web de captación comercial no demuestra que exista un libro transaccional de ventas tolerante a desconexiones.
+
+**Seguridad y privacidad.** El mini CRM comercial gestiona prospectos y procesos asociados a pagos; el futuro POS edge gestionaría ventas locales y eventualmente datos personales. Ambos requieren permisos acotados, secretos aislados, políticas de retención, auditoría y recuperación comprobada según su entorno real. No se deben extrapolar los controles documentados en la web al POS edge no implementado.
+
+**Alternativas y trade-offs.** Un POS solo cloud reduce mantenimiento de hardware, pero depende de Internet; instalar un ERP completo en cada nodo eleva complejidad y actualizaciones. Un core local con adapters ERP podría aportar continuidad, a costa de conflictos de sincronización, desgaste de almacenamiento, conciliación y soporte. Son hipótesis pendientes de piloto.
+
+**Operación y preguntas abiertas.** Antes de aceptar un piloto se necesitan versiones exactas, trazas de venta offline e impresión, reinicio y restauración real, pruebas de eventos duplicados, conciliación del backlog, feedback de operadores y registro de fallos/rollback. Los diagramas y catálogos de scripts no sustituyen estas pruebas.
+
 ## Mapa de conformidad con el estándar de publicación
 
 Los 14 temas exigidos se encuentran en el documento y sus anexos vinculados:
