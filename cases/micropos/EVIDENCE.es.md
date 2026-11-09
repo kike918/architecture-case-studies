@@ -42,3 +42,21 @@ Antes de afirmar madurez se debe demostrar venta sin Internet, commit local dura
 ## Disciplina de afirmaciones
 
 No se debe afirmar confiabilidad offline productiva, madurez de integración ERP ni estabilidad de campo de Raspberry Pi hasta demostrarlo.
+
+## Reconciliación de evidencia: web comercial frente a POS edge (2026-11-09)
+
+La matriz anterior corresponde a la **arquitectura objetivo edge**. La implementación `MicroPos-web` se clasifica por separado:
+
+| Capacidad web comercial | Fuente consultada en lectura | Límite de evidencia |
+|---|---|---|
+| Sitio estático multilingüe | `MicroPos-web@dev/README.md` y `ROADMAP.md` | Astro ES/EN/CA documentado y URL comercial publicada; no acredita cada página en vivo |
+| Leads/mini CRM | README y roadmap | PHP/SQLite, API v1 y actividades persistidas; implementación documentada |
+| Pagos | README y roadmap | Flujos manuales/parciales y Bold documentados; aprobación en pruebas **no** certifica cualquier cobro productivo |
+| Outbox y n8n | README y roadmap | Validaciones reales API/webhook→n8n registradas para la web; **no** prueban sincronización del POS edge |
+| Artefactos de Hostinger | `MicroPos-web@dev/HOSTINGER-DEPLOYMENT.md` | Empaquetado INSTALL/UPDATE y política de preservación documentados; generar un ZIP no equivale a desplegarlo |
+| POS Raspberry Pi | Caso de arquitectura y `PILOT_PLAN.md` | Planificado, sin resultados de ejecución examinados |
+
+**Criterios:** verificar release web fechado y smoke productivo antes de ampliar afirmaciones de despliegue. Completar el piloto hardware (venta offline, impresión, reinicio, sincronización sin duplicados, restauración real y conciliación ERP) antes de elevar el nivel de evidencia edge a Piloto o Desplegado.
+
+**Revisión documental; no prueba de salud productiva en tiempo real.**
+
