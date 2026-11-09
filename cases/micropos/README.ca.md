@@ -19,6 +19,22 @@ La web comercial gestiona clients potencials i pagaments comercials; el POS edge
 
 Llegiu [EVIDENCE.ca.md](EVIDENCE.ca.md) per consultar les limitacions. La resta del document descriu l'arquitectura objectiu del POS edge, no un inventari de components en producció.
 
+## Mapa de conformitat amb l'estàndard de publicació
+
+Els 14 temes obligatoris s'expliquen en aquest document i en els annexos vinculats:
+
+| Tema | Ubicació |
+|---|---|
+| Context; problema; restriccions; drivers | Resum, Problema i [Arquitectura](ARCHITECTURE.ca.md) |
+| Límits del sistema i arquitectura | Arquitectura resumida, Decisió ERP i [Arquitectura](ARCHITECTURE.ca.md) |
+| Decisions; alternatives; compromisos | Decisió ERP, [Decisions](DECISIONS.ca.md), [Estratègia ERP](ERP_STRATEGY.ca.md) |
+| Seguretat i privadesa | [Arquitectura](ARCHITECTURE.ca.md), [Evidència](EVIDENCE.ca.md) i revisió específica pendent |
+| Lliurament i operacions | Pilot, Scripts i [Pla pilot](PILOT_PLAN.ca.md) |
+| Nivell d'evidència | Actualització de les dues línies i [Registre](EVIDENCE.ca.md) |
+| Lliçons i qüestions pendents | Distinció entre CRM web i sincronització edge; proves del [Pla pilot](PILOT_PLAN.ca.md) |
+
+**Nivell canònic per línia:** web comercial **Deployed** segons la publicació documentada, sense validació productiva sostinguda; POS edge **Concept**, disseny publicat i pilot no executat. Aquesta revisió no és una auditoria independent de l'entorn en viu.
+
 ## Resum executiu
 
 MicroPOS és una arquitectura POS lleugera per a petits negocis i entorns de baixa connectivitat. La hipòtesi central és que un negoci ha de poder vendre, imprimir, tancar caixa, preservar dades locals i recuperar-se de la pèrdua de connectivitat sense dependre d’una connexió contínua al núvol.
