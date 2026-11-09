@@ -2,7 +2,20 @@
 
 🌐 **Languages:** English · [Español](README.es.md) · [Català](README.ca.md)
 
-**Status:** Architecture baseline published; Raspberry Pi edge pilot planned. ERP adapters and operational scripts are defined as implementation targets, not yet production validated.
+**Status:** Commercial web/mini CRM implementation documented; Raspberry Pi edge POS architecture baseline published, pilot planned. No production validation claim for the edge POS.
+
+## Evidence update — two distinct MicroPOS tracks (2026-11-09)
+
+**Do not conflate the deployed commercial/operations web with the future edge POS.** Source documentation in the product's separate `MicroPos-web` repository describes a multilingual Astro static commercial site, native PHP/SQLite mini CRM, versioned integration API, persistent outbox/webhooks, manual and Bold payment flows, and real n8n integration checks. The site is published as a commercial surface. Those capabilities belong to the **commercial web/mini CRM track**, not to the Raspberry Pi edge engine.
+
+| Track | Evidence supported by reviewed documentation | Not established |
+|---|---|---|
+| Commercial web and mini CRM | Astro SSG ES/EN/CA; PHP/SQLite CRM, API v1, payment contracts, outbox and recorded n8n tests; Hostinger packaging | Independent live audit of every current function or production payment, sustained uptime/usage |
+| Edge / offline-first POS | Architecture, ADRs and detailed Raspberry Pi field-test plan | Executed offline sale, resilient local POS database, printing, sync recovery, ERP adapters or successful Raspberry Pi pilot |
+
+**Architectural relationship:** the commercial web captures prospects and handles commercial payments; the envisioned edge POS would run actual merchant sales locally. A web lead/payment is not an offline POS transaction. Neither the existing web CRM outbox nor its n8n validation proves that the *edge synchronization outbox* is implemented or field tested.
+
+Additional evidence and release conditions are tracked in [EVIDENCE.md](EVIDENCE.md). The rest of this document remains the **edge target architecture**, not an implementation inventory.
 
 ## Executive summary
 
