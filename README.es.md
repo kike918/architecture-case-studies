@@ -32,7 +32,7 @@ Los siguientes casos incluyen trabajos técnicos publicados y candidatos todaví
 | [Rewi v0.2.1](cases/rewi/README.es.md) | Caso publicado — Desplegado (2026-11-03); no validado en producción | SaaS Laravel de fidelización, aislamiento de negocios, integraciones por ámbito, colas y evidencia de release |
 | [Tazario Recipes](cases/tazario-recipes/README.es.md) | Caso de arquitectura publicado — despliegue GCP preparado, producción sin verificar | Monorepo React/Hono/Drizzle, atribución MIT, persistencia aislada, plan de despliegue y límites de evidencia |
 | [DCP Flow](cases/dcp-flow/README.es.md) | Caso metodológico publicado — aplicación documentada, resultados no cuantificados | Gobierno humano + IA, evaluación de soluciones, blueprints por stack, skills y gates basados en evidencia |
-| SipDolce Labs | Candidato — pendiente definir alcance | Arquitectura editorial Astro, contenido bilingüe e integraciones |
+| [SipDolce Labs](cases/sipdolce-labs/README.es.md) | Caso publicado — web v1 desplegada; cambios posteriores en desarrollo | Astro/TypeScript SSG bilingüe, companion PHP/SQLite y gobierno editorial |
 
 Ser candidato no equivale a un caso publicado ni a validación productiva. La [documentación DCP Flow](https://dcpflow.digitalconsultingplus.co/) proporciona contexto metodológico público.
 
@@ -68,4 +68,4 @@ Actualizado cuando cambia la evidencia
 ## Estado
 
 **Fase:** FalconCDT, DCP DownloadGate y Rewi tienen casos publicados con evidencia de despliegue y distintos niveles de validación; Normia continúa pausado y el piloto Raspberry Pi de MicroPOS sigue planificado. Tazario Recipes tiene arquitectura publicada y despliegue preparado, sin operación productiva confirmada.  
-**Siguiente hito:** Ejecutar el laboratorio Raspberry Pi de MicroPOS y actualizar el registro de evidencia con resultados medidos.
+**Siguiente hito:** Actualizar la evidencia al cerrar nuevos releases y pilotos controlados, incluido el próximo release editorial de SipDolce Labs y el laboratorio edge de MicroPOS.
