@@ -12,54 +12,40 @@ The goal is to present selected architecture work across digital products, busin
 
 Each case study focuses on business context, constraints, architectural drivers, system boundaries, major decisions, alternatives, trade-offs, security, validation evidence and lessons learned.
 
-## Case roadmap
+## Published cases — 8
 
-| Case | Status | Focus |
+All eight cases below are **published editorially**; their technical evidence levels differ. See each case's register before inferring a production claim.
+
+| Case | Editorial / technical status | Scope |
 |---|---|---|
-| [FalconCDT Engagement Platform](cases/falconcdt-engagement/README.md) | Published v1 | White-label engagement, scoring, notifications and operational delivery |
-| [DCP DownloadGate](cases/dcp-downloadgate/README.md) | Published; deployed evidence | Controlled private file distribution, temporary access, protected hosting boundaries and auditability |
-| [MicroPOS](cases/micropos/README.md) | Commercial web/mini CRM documented; edge POS baseline published, Raspberry Pi pilot pending | Astro/PHP/SQLite commercial operations and separately proposed offline-first edge POS, ERP adapters |
-| [Normia](cases/normia/README.md) | Architecture baseline published; development paused | Food operations, compliance, corrective actions and verifiable audit trails |
+| [FalconCDT Engagement Platform](cases/falconcdt-engagement/README.md) | Published v1 · Deployed | White-label engagement, scoring, notifications and operational delivery |
+| [DCP DownloadGate](cases/dcp-downloadgate/README.md) | Published · Deployed (documented evidence) | Controlled file distribution, temporary access and protected storage |
+| [MicroPOS](cases/micropos/README.md) | Published · commercial web documented; edge Concept / pilot pending | Astro/PHP/SQLite commercial web plus separate offline-first POS architecture |
+| [Normia](cases/normia/README.md) | Published · Concept/prototype baseline; development paused | Food-service compliance, corrective actions and verifiable records |
+| [Rewi v0.2.1](cases/rewi/README.md) | Published · Deployed 2026-11-03; sustained validation pending | Laravel loyalty SaaS, scoped integrations, queues and release evidence |
+| [Tazario Recipes](cases/tazario-recipes/README.md) | Published · implementation documented; deployment prepared, not verified | TypeScript React/Hono/Drizzle, upstream attribution and GCP plan |
+| [DCP Flow](cases/dcp-flow/README.md) | Published · Methodology (product maturity N/A); application documented | Human + AI method, discovery, contextual blueprints and quality gates |
+| [SipDolce Labs](cases/sipdolce-labs/README.md) | Published · v1 Deployed; subsequent editorial changes in development | Bilingual Astro SSG editorial site with bounded PHP/SQLite intake |
 
-The cases are published progressively. Architecture baselines are not treated as production validation until evidence exists.
+**No unpublished candidates are listed at this review date.** Future candidates require evidence, sanitization, architectural review and publication approval. The five product maturity levels are defined in [Publication Standard](docs/PUBLICATION_STANDARD.md); methodology cases are N/A.
 
 ## Repository structure
 
 ```text
 architecture-case-studies/
-├── README.md
-├── README.es.md
-├── CONTRIBUTING.md
-├── SECURITY.md
+├── README.md / README.es.md
 ├── cases/
-│   ├── dcp-downloadgate/
-│   ├── dcp-flow/
 │   ├── falconcdt-engagement/
+│   ├── dcp-downloadgate/
 │   ├── micropos/
 │   ├── normia/
 │   ├── rewi/
+│   ├── tazario-recipes/
+│   ├── dcp-flow/
 │   ├── sipdolce-labs/
-│   └── tazario-recipes/
 ├── templates/
-│   ├── CASE_STUDY_TEMPLATE.md
-│   └── ADR_TEMPLATE.md
-└── docs/
-    ├── PUBLICATION_STANDARD.md
-    └── SANITIZATION_GUIDE.md
+└── docs/PUBLICATION_STANDARD.md
 ```
-
-## Additional published cases and candidates
-
-The following cases include published technical narratives and unpublished candidates. Publication does not imply production validation:
-
-| Case / candidate | Editorial status | Architectural focus |
-|---|---|---|
-| [Rewi v0.2.1](cases/rewi/README.md) | Published case — Deployed (2026-11-03); not Production validated | Laravel loyalty SaaS, tenancy boundaries, scoped integrations, asynchronous work and release evidence |
-| [Tazario Recipes](cases/tazario-recipes/README.md) | Published architecture case — GCP deployment prepared, production unverified | React/Hono/Drizzle monorepo, upstream MIT attribution, isolated persistence, deployment plan and evidence limits |
-| [DCP Flow](cases/dcp-flow/README.md) | Published methodology case — documented application, outcomes not quantified | Human + AI engineering governance, solution discovery, stack-specific blueprints, skills and evidence-driven gates |
-| [SipDolce Labs](cases/sipdolce-labs/README.md) | Published case — v1 website deployed; later changes remain in development | Astro/TypeScript bilingual SSG, bounded PHP/SQLite intake and editorial publishing governance |
-
-A candidate is not a published case or a production-validation claim. [DCP Flow documentation](https://dcpflow.digitalconsultingplus.co/) provides public methodological context.
 
 ## Publication principles
 
@@ -96,8 +82,8 @@ This repository is not a source-code mirror of private products, a marketing bro
 
 ## Status
 
-**Phase:** FalconCDT, DCP DownloadGate and Rewi have published cases with deployment evidence (at different validation levels); Normia development remains paused; MicroPOS Raspberry Pi pilot remains planned. Tazario Recipes has published architecture and documented deployment preparation, without confirmed production operation.  
-**Next milestone:** Refresh evidence for existing cases as releases and controlled pilots are completed, including the next SipDolce Labs editorial release and MicroPOS edge lab.
+**Phase:** Eight published cases with distinct, explicitly qualified maturity levels. Rewi, FalconCDT and DCP DownloadGate have deployment evidence; SipDolce Labs v1 is documented as deployed; Tazario GCP deployment and MicroPOS edge pilot remain unverified; Normia is paused; DCP Flow is a methodology.  
+**Next milestone:** Update evidence when new releases/pilots are actually observed.
 
 ---
 
