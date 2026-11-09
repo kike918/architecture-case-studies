@@ -1,6 +1,6 @@
 # Tazario Recipes — Registro de evidencia
 
-**Corte de revisión:** 2026-11-08. **Estado editorial:** borrador para revisión humana.
+**Corte de revisión:** 2026-11-08. **Estado editorial:** publicado con aprobación humana de divulgación (2026-11-09); las compuertas de evidencia técnica siguen abiertas.
 
 | Afirmación | Base documental revisada | Clasificación | Límite |
 |---|---|---|---|
@@ -14,7 +14,7 @@
 
 ## Compuertas para avanzar
 
-- [ ] Aprobación humana de divulgación y sanitización.
+- [x] Aprobación humana de divulgación y sanitización (2026-11-09).
 - [ ] Respaldar afirmaciones con SHA del producto y pruebas ejecutadas.
 - [ ] Resolver o aceptar expresamente los riesgos pendientes sobre consentimiento y rastreadores antes de los releases relevantes.
 - [ ] Verificar procedencia y atribuciones de medios distribuidos públicamente.
