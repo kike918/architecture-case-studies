@@ -36,6 +36,7 @@ architecture-case-studies/
 │   ├── falconcdt-engagement/
 │   ├── micropos/
 │   ├── normia/
+│   ├── rewi/
 │   └── tazario-recipes/
 ├── templates/
 │   ├── CASE_STUDY_TEMPLATE.md
@@ -51,7 +52,7 @@ The following candidates require separate evidence, architecture and sanitizatio
 
 | Candidate | Editorial status | Proposed architectural focus |
 |---|---|---|
-| Rewi | Candidate — evidence review pending | Laravel SaaS, business isolation, payments, operational flows and deployment gates |
+| [Rewi v0.2.1](cases/rewi/README.md) | Published case — Deployed (2026-11-03); not Production validated | Laravel loyalty SaaS, tenancy boundaries, scoped integrations, asynchronous work and release evidence |
 | [Tazario Recipes](cases/tazario-recipes/README.md) | Published architecture case — GCP deployment prepared, production unverified | React/Hono/Drizzle monorepo, upstream MIT attribution, isolated persistence, deployment plan and evidence limits |
 | DCP Flow | Candidate — evidence review pending | Human + AI engineering governance, context-specific blueprints, skills and quality gates |
 | SipDolce Labs | Candidate — scope review pending | Astro-based editorial architecture, bilingual content and integrations |
@@ -93,7 +94,7 @@ This repository is not a source-code mirror of private products, a marketing bro
 
 ## Status
 
-**Phase:** FalconCDT and DCP DownloadGate deployed cases published; Normia architecture baseline published with development paused; MicroPOS edge/offline-first baseline published with Raspberry Pi pilot planned. Tazario Recipes is published with documented deployment preparation and explicitly unverified production operations.  
+**Phase:** FalconCDT, DCP DownloadGate and Rewi have published cases with deployment evidence (at different validation levels); Normia development remains paused; MicroPOS Raspberry Pi pilot remains planned. Tazario Recipes has published architecture and documented deployment preparation, without confirmed production operation.  
 **Next milestone:** Execute the MicroPOS Raspberry Pi lab and update its evidence register with measured results.
 
 ---
