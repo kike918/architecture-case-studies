@@ -4,6 +4,12 @@
 
 **Status:** Published sanitized methodology/engineering-governance case. **Evidence classification:** Documented and applied method with selected reference-project evidence; not a claim of universal adoption, independent certification or measured productivity improvement.
 
+## Evidence taxonomy and publication-standard coverage
+
+DCP Flow is a **methodology case**, so product maturity is **N/A**, not Deployed or Production validated. Its engineering-system design is documented and selected historical applications are described; the evidence does not quantify productivity gains.
+
+**Fourteen-topic map:** context/problem (§2), constraints (§3), drivers (§4), boundaries and architecture (§5), key decisions/alternatives/trade-offs (§6), delivery/operations (§7), security/privacy (§8), evidence (§10 and [register](EVIDENCE.md)), lessons (§11), open questions (§12). This explicitly provides a methodology-specific alternative to a product release diagram.
+
 ## 1. Executive summary
 
 DCP Flow is Digital Consulting Plus's versioned method for moving from a business problem to a reviewed, evidence-backed outcome while retaining engineering knowledge. Its **Engineering System** implements the technical side through cross-project standards, context-specific blueprints, reusable skills, quality gates, decision records and repository governance. Kai can interpret and operate this method but is not an independent authority.
