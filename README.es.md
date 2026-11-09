@@ -12,29 +12,26 @@ Presentar trabajo seleccionado de arquitectura en productos digitales, sistemas 
 
 Cada caso explica contexto de negocio, restricciones, drivers arquitectónicos, límites del sistema, decisiones principales, alternativas, trade-offs, seguridad, evidencia y aprendizajes.
 
-## Roadmap de casos
+## Casos publicados — 8
 
-| Caso | Estado | Enfoque |
+Los ocho casos están **publicados editorialmente**, pero tienen niveles de evidencia técnica diferentes. Consultar cada registro antes de deducir validación productiva.
+
+| Caso | Estado editorial / técnico | Alcance |
 |---|---|---|
-| [FalconCDT Engagement Platform](cases/falconcdt-engagement/README.es.md) | Publicado v1 | White-label engagement, scoring, notificaciones y operación |
-| [DCP DownloadGate](cases/dcp-downloadgate/README.es.md) | Publicado; evidencia desplegada | Distribución controlada de archivos privados, accesos temporales, límites protegidos en hosting y auditabilidad |
-| [MicroPOS](cases/micropos/README.es.md) | Web comercial/mini CRM documentados; baseline POS edge publicado, piloto Raspberry Pi pendiente | Operación comercial Astro/PHP/SQLite y, por separado, POS offline-first y adapters ERP propuestos |
-| [Normia](cases/normia/README.es.md) | Baseline arquitectónico publicado; desarrollo pausado | Operación alimentaria, cumplimiento, acciones correctivas y auditoría verificable |
+| [FalconCDT Engagement Platform](cases/falconcdt-engagement/README.es.md) | Publicado v1 · Desplegado | Engagement white-label, scoring, notificaciones y operación |
+| [DCP DownloadGate](cases/dcp-downloadgate/README.es.md) | Publicado · Desplegado (evidencia documentada) | Distribución controlada, accesos temporales y almacenamiento protegido |
+| [MicroPOS](cases/micropos/README.es.md) | Publicado · web comercial documentada; POS edge Concept / piloto pendiente | Web comercial Astro/PHP/SQLite y arquitectura POS offline-first separada |
+| [Normia](cases/normia/README.es.md) | Publicado · baseline Concept/prototipo; desarrollo pausado | Cumplimiento sanitario, acciones correctivas y registros verificables |
+| [Rewi v0.2.1](cases/rewi/README.es.md) | Publicado · Desplegado 2026-11-03; validación sostenida pendiente | SaaS Laravel de fidelización, integraciones delimitadas, colas y release |
+| [Tazario Recipes](cases/tazario-recipes/README.es.md) | Publicado · implementación documentada; despliegue preparado, no verificado | TypeScript React/Hono/Drizzle, atribución upstream y plan GCP |
+| [DCP Flow](cases/dcp-flow/README.es.md) | Publicado · Metodología (madurez producto N/A); aplicación documentada | Método humano + IA, discovery, blueprints contextuales y Quality Gates |
+| [SipDolce Labs](cases/sipdolce-labs/README.es.md) | Publicado · v1 Desplegada; cambios editoriales posteriores en desarrollo | Sitio editorial bilingüe Astro SSG y formularios PHP/SQLite acotados |
 
-Los casos se publican progresivamente. Un baseline arquitectónico no se presenta como implementación terminada ni validación productiva hasta que exista evidencia.
+**No hay candidatos inéditos listados en este corte.** Todo futuro candidato requiere evidencia, sanitización, revisión arquitectónica y aprobación de publicación. Los cinco niveles técnicos están en el [Estándar de publicación](docs/PUBLICATION_STANDARD.md); los casos de metodología usan N/A.
 
-## Casos adicionales publicados y candidatos
+## Auditoría documental más reciente
 
-Los siguientes casos incluyen trabajos técnicos publicados y candidatos todavía sin publicar. Publicación no equivale a validación productiva:
-
-| Caso / candidato | Estado editorial | Enfoque arquitectónico |
-|---|---|---|
-| [Rewi v0.2.1](cases/rewi/README.es.md) | Caso publicado — Desplegado (2026-11-03); no validado en producción | SaaS Laravel de fidelización, aislamiento de negocios, integraciones por ámbito, colas y evidencia de release |
-| [Tazario Recipes](cases/tazario-recipes/README.es.md) | Caso de arquitectura publicado — despliegue GCP preparado, producción sin verificar | Monorepo React/Hono/Drizzle, atribución MIT, persistencia aislada, plan de despliegue y límites de evidencia |
-| [DCP Flow](cases/dcp-flow/README.es.md) | Caso metodológico publicado — aplicación documentada, resultados no cuantificados | Gobierno humano + IA, evaluación de soluciones, blueprints por stack, skills y gates basados en evidencia |
-| [SipDolce Labs](cases/sipdolce-labs/README.es.md) | Caso publicado — web v1 desplegada; cambios posteriores en desarrollo | Astro/TypeScript SSG bilingüe, companion PHP/SQLite y gobierno editorial |
-
-Ser candidato no equivale a un caso publicado ni a validación productiva. La [documentación DCP Flow](https://dcpflow.digitalconsultingplus.co/) proporciona contexto metodológico público.
+[Auditoría correctiva del portafolio GitHub — 2026-11-09](docs/PORTFOLIO_AUDIT_2026-11-09.md): resultados, límites de evidencia, enlaces verificados y comprobaciones operativas todavía pendientes.
 
 ## Principios de publicación
 
@@ -67,5 +64,5 @@ Actualizado cuando cambia la evidencia
 
 ## Estado
 
-**Fase:** FalconCDT, DCP DownloadGate y Rewi tienen casos publicados con evidencia de despliegue y distintos niveles de validación; Normia continúa pausado y el piloto Raspberry Pi de MicroPOS sigue planificado. Tazario Recipes tiene arquitectura publicada y despliegue preparado, sin operación productiva confirmada.  
-**Siguiente hito:** Actualizar la evidencia al cerrar nuevos releases y pilotos controlados, incluido el próximo release editorial de SipDolce Labs y el laboratorio edge de MicroPOS.
+**Fase:** Ocho casos públicos con madurez distinta y explícitamente delimitada. Rewi, FalconCDT y DCP DownloadGate tienen evidencia de despliegue; SipDolce Labs v1 figura desplegada; GCP Tazario y piloto edge MicroPOS siguen sin verificar; Normia está pausado; DCP Flow es una metodología.  
+**Siguiente hito:** Actualizar evidencia cuando se verifiquen nuevos releases o pilotos.

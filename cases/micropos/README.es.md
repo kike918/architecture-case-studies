@@ -17,6 +17,32 @@
 
 Ver el detalle en [EVIDENCE.es.md](EVIDENCE.es.md). El resto del documento describe la **arquitectura objetivo edge**, no un inventario de implementación.
 
+## Evaluación arquitectónica — restricciones, seguridad, compromisos y dudas
+
+**Contexto y restricciones.** Los pequeños negocios tienen presupuestos limitados, conectividad variable y poca capacidad de administrar equipos. Una web de captación comercial no demuestra que exista un libro transaccional de ventas tolerante a desconexiones.
+
+**Seguridad y privacidad.** El mini CRM comercial gestiona prospectos y procesos asociados a pagos; el futuro POS edge gestionaría ventas locales y eventualmente datos personales. Ambos requieren permisos acotados, secretos aislados, políticas de retención, auditoría y recuperación comprobada según su entorno real. No se deben extrapolar los controles documentados en la web al POS edge no implementado.
+
+**Alternativas y trade-offs.** Un POS solo cloud reduce mantenimiento de hardware, pero depende de Internet; instalar un ERP completo en cada nodo eleva complejidad y actualizaciones. Un core local con adapters ERP podría aportar continuidad, a costa de conflictos de sincronización, desgaste de almacenamiento, conciliación y soporte. Son hipótesis pendientes de piloto.
+
+**Operación y preguntas abiertas.** Antes de aceptar un piloto se necesitan versiones exactas, trazas de venta offline e impresión, reinicio y restauración real, pruebas de eventos duplicados, conciliación del backlog, feedback de operadores y registro de fallos/rollback. Los diagramas y catálogos de scripts no sustituyen estas pruebas.
+
+## Mapa de conformidad con el estándar de publicación
+
+Los 14 temas exigidos se encuentran en el documento y sus anexos vinculados:
+
+| Tema obligatorio | Ubicación |
+|---|---|
+| Contexto; problema; restricciones; drivers | Resumen, Problema y [Arquitectura](ARCHITECTURE.es.md) |
+| Límites y vista arquitectónica | Arquitectura resumida, Decisión ERP y [Arquitectura](ARCHITECTURE.es.md) |
+| Decisiones; alternativas; trade-offs | Decisión ERP, [Decisiones](DECISIONS.es.md), [Estrategia ERP](ERP_STRATEGY.es.md) |
+| Seguridad y privacidad | [Arquitectura](ARCHITECTURE.es.md), [Evidencia](EVIDENCE.es.md) y verificación específica pendiente |
+| Entrega y operación | Piloto, Scripts y [Plan piloto](PILOT_PLAN.es.md) |
+| Nivel de evidencia | Actualización de las dos líneas y [Registro](EVIDENCE.es.md) |
+| Aprendizajes y preguntas pendientes | Separación CRM/web versus sincronización edge; pendientes del [Plan piloto](PILOT_PLAN.es.md) |
+
+**Nivel canónico por línea:** web comercial **Deployed** para la superficie pública documentada, sin validación productiva sostenida; POS edge **Concept**, con diseño publicado y piloto sin ejecutar. No se realizó una auditoría independiente del runtime en vivo.
+
 ## Resumen ejecutivo
 
 MicroPOS es una arquitectura POS ligera para pequeños negocios y entornos de baja conectividad. La hipótesis central es que un negocio debe poder vender, imprimir, cerrar caja, preservar datos locales y recuperarse de pérdida de conectividad sin depender de una conexión continua a la nube.

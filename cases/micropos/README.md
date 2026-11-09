@@ -17,6 +17,32 @@
 
 Additional evidence and release conditions are tracked in [EVIDENCE.md](EVIDENCE.md). The rest of this document remains the **edge target architecture**, not an implementation inventory.
 
+## Architecture review — constraints, security, trade-offs and open questions
+
+**Context and constraints.** Small merchants have limited budgets, intermittent connectivity and limited capacity to operate hardware. A browser-based commercial acquisition system cannot be reused as proof of a locally resilient sales ledger.
+
+**Security/privacy boundary.** The commercial mini CRM handles prospect data and payment-adjacent workflows; the edge POS would handle local sales records and potentially personal data. Both require scoped access, secret isolation, data retention, auditability and tested recovery suited to their actual deployment. The currently documented web controls must not be projected onto the unimplemented edge architecture.
+
+**Alternatives and trade-offs.** A cloud-only POS reduces hardware maintenance but makes connectivity a runtime dependency. Installing a full ERP on each edge node increases setup and upgrade complexity. A local transaction-first core with optional ERP adapters improves potential continuity but introduces synchronization conflicts, storage wear, reconciliation and support obligations. These remain hypotheses until the pilot.
+
+**Delivery and unresolved questions.** Before accepting an edge pilot, collect exact hardware/software versions, offline-sale and print traces, restart and real restore evidence, duplicate-event tests, backlog reconciliation, operator feedback and failure/rollback results. An architecture diagram and scripts catalogue are not substitutes for these observations.
+
+## Publication-standard topic map
+
+This case covers the 14 required publication topics across the main document and explicitly linked companions:
+
+| Required topic | Where to read it |
+|---|---|
+| Context; problem; constraints; architectural drivers | Executive summary, Problem and [Architecture](ARCHITECTURE.md) |
+| System boundaries; architecture overview | Architecture overview, Core architectural position, [Architecture](ARCHITECTURE.md) |
+| Key decisions; alternatives; trade-offs | Core architectural position, ERP strategy, [Decisions](DECISIONS.md), [ERP strategy](ERP_STRATEGY.md) |
+| Security and privacy | [Architecture](ARCHITECTURE.md), [Evidence](EVIDENCE.md) and project-specific review still required |
+| Delivery and operations | Raspberry Pi pilot, Scripts catalog, [Pilot plan](PILOT_PLAN.md) |
+| Evidence level | Evidence update and [Evidence register](EVIDENCE.md) |
+| Lessons learned; unresolved questions | Distinguish web CRM from edge sync; run the pilot and document open operational questions in [Pilot plan](PILOT_PLAN.md) |
+
+**Canonical level by track:** commercial web **Deployed** for the publicly documented commercial surface, without sustained production validation; edge POS **Concept** with published design and unexecuted pilot. Source-reported implementation is not independently live-audited here.
+
 ## Executive summary
 
 MicroPOS is a lightweight point-of-sale architecture for small businesses and low-connectivity environments. The central hypothesis is that a business should be able to sell, print, close cash, preserve local data and recover from connectivity loss without depending on a continuously available cloud connection.
