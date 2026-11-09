@@ -19,7 +19,7 @@ Each case study focuses on business context, constraints, architectural drivers,
 | [FalconCDT Engagement Platform](cases/falconcdt-engagement/README.md) | Published v1 | White-label engagement, scoring, notifications and operational delivery |
 | [DCP DownloadGate](cases/dcp-downloadgate/README.md) | Published; deployed evidence | Controlled private file distribution, temporary access, protected hosting boundaries and auditability |
 | [MicroPOS](cases/micropos/README.md) | Architecture baseline published; Raspberry Pi pilot planned | Offline-first POS, edge deployment, ERP adapters and low-connectivity resilience |
-| [Normia](cases/normia/README.md) | Architecture baseline published; implementation in progress | Food operations, compliance, corrective actions and verifiable audit trails |
+| [Normia](cases/normia/README.md) | Architecture baseline published; development paused | Food operations, compliance, corrective actions and verifiable audit trails |
 
 The cases are published progressively. Architecture baselines are not treated as production validation until evidence exists.
 
@@ -43,6 +43,19 @@ architecture-case-studies/
     ├── PUBLICATION_STANDARD.md
     └── SANITIZATION_GUIDE.md
 ```
+
+## Planned case studies (not yet published)
+
+The following candidates require separate evidence, architecture and sanitization reviews before publication:
+
+| Candidate | Editorial status | Proposed architectural focus |
+|---|---|---|
+| Rewi | Candidate — evidence review pending | Laravel SaaS, business isolation, payments, operational flows and deployment gates |
+| Tazario Recipes | Candidate — evidence review pending | React/Hono/Drizzle monorepo, upstream separation, attribution, data boundaries and QA |
+| DCP Flow | Candidate — evidence review pending | Human + AI engineering governance, context-specific blueprints, skills and quality gates |
+| SipDolce Labs | Candidate — scope review pending | Astro-based editorial architecture, bilingual content and integrations |
+
+A candidate is not a published case or a production-validation claim. [DCP Flow documentation](https://dcpflow.digitalconsultingplus.co/) provides public methodological context.
 
 ## Publication principles
 
@@ -79,7 +92,7 @@ This repository is not a source-code mirror of private products, a marketing bro
 
 ## Status
 
-**Phase:** FalconCDT and DCP DownloadGate deployed cases published; Normia architecture baseline published with implementation in progress; MicroPOS edge/offline-first baseline published with Raspberry Pi pilot planned.  
+**Phase:** FalconCDT and DCP DownloadGate deployed cases published; Normia architecture baseline published; development paused; MicroPOS edge/offline-first baseline published with Raspberry Pi pilot planned.  
 **Next milestone:** Execute the MicroPOS Raspberry Pi lab and update its evidence register with measured results.
 
 ---

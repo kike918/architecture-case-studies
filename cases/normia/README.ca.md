@@ -2,7 +2,7 @@
 
 🌐 **Idiomes:** [English](README.md) · [Español](README.es.md) · Català
 
-**Estat:** Cas d’arquitectura i implementació en progrés. Sprint 0, bootstrap tècnic i discovery del pilot estan en curs.
+**Estat:** Pausat / manteniment. Es conserven el baseline arquitectònic, Sprint 0 i bootstrap tècnic; no hi ha implementació activa ni discovery del pilot en curs.
 
 ## Resum executiu
 
@@ -12,7 +12,7 @@ El producte es dissenya a partir d’un pilot real i no des d’una abstracció 
 
 L’arquitectura actual és un monòlit modular Laravel amb MySQL com a font de veritat operacional, UX web mobile-first, context QR, Telegram com a canal, n8n com a orquestrador i ancoratge agregat opcional d’evidència d’auditoria a Polygon PoS.
 
-**Nivell d’evidència:** baseline d’arquitectura + prototip UX de referència + implementació en curs. No validat en producció.
+**Nivell d’evidència:** baseline d’arquitectura + prototip UX de referència + bootstrap tècnic conservat. No validat en producció.
 
 ## Context i problema
 
@@ -121,8 +121,8 @@ La IA no aprova producció ni substitueix la revisió humana.
 | Arquitectura MVP | Baseline congelat |
 | Golden Flow | Definit, implementació pendent |
 | Prototip UX | Referència no productiva |
-| Discovery del pilot | En curs |
-| Monòlit modular | Baseline / bootstrap en curs |
+| Discovery del pilot | Pausat / no completat |
+| Monòlit modular | Baseline / bootstrap conservat |
 | Flux tasca-temperatura-desviació | Vertical slice planificat |
 | CAPA i verificació | Model de domini definit |
 | Audit ledger | Arquitectura definida, implementació pendent |
@@ -149,4 +149,4 @@ La IA no aprova producció ni substitueix la revisió humana.
 
 ---
 
-Aquest cas distingeix explícitament arquitectura documentada, prototips de referència, implementació en curs i validació futura. Normia no es presenta com a validat en producció.
+Aquest cas distingeix explícitament arquitectura documentada, prototips de referència, bootstrap tècnic conservat i validació futura. Normia no es presenta com a validat en producció.
