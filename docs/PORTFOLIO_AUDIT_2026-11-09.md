@@ -25,7 +25,8 @@
 | External links and live websites | PARTIAL | Public SipDolce Labs and MicroPOS pages retrieved; Rewi and DCP Flow not accessible to the web verifier; cannot infer outages |
 | Markdown anchor fragments, rendering and automated lint | NOT RUN | Target-resolution scan does not parse headings, Markdown rendering or anchors |
 | CI/runtime, restoration and security validation of product apps | NOT RUN | Not in documentation audit scope |
-| Corporate `.github` `dev` sync and obsolete branches | REQUIRES SEPARATE GIT CHECK | See below; clean only verified merged branches, never assume diverged status means missing work |
+| Corporate `.github` `dev` synchronization | PASS | 2026-11-09 fast-forwarded `dev` to `main` with optimistic expected SHA; no force, no product branch change |
+| Historical documentation branches | OPEN / LOW PRIORITY | Squash-merged branches remain for individually verified cleanup; no deletion performed |
 
 ## Evidence maturity, not release certification
 
@@ -42,7 +43,7 @@
 
 ## Governance follow-up
 
-The corporate `.github` `dev` branch was observed six commits behind `main` in the initial audit. Confirm whether it is an actively maintained integration branch and reconcile by **fast-forward only** if it has no unique commits. Several historical `docs/*` branches from squash-merged PRs remain on remote repositories; a diverged comparison alone cannot justify deletion. Branch deletion requires individual PR/ref checks and is not a prerequisite for truthful public case content.
+The corporate `.github` `dev` branch was observed six commits behind `main` in the initial audit, with zero unique commits. It was reconciled by **non-forced fast-forward** to the verified `main` commit `18665d7e6a9b413419e7969a78f22a7749617c99`. Several historical `docs/*` branches from squash-merged PRs remain on remote repositories; a diverged comparison alone cannot justify deletion. Branch deletion requires individual PR/ref checks and is not a prerequisite for truthful public case content.
 
 ## Verification rule
 
