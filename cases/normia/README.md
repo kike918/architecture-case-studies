@@ -2,7 +2,7 @@
 
 🌐 **Languages:** English · [Español](README.es.md) · [Català](README.ca.md)
 
-**Status:** Architecture baseline and implementation-in-progress case study. Sprint 0, technical bootstrap and pilot discovery are underway.
+**Status:** Paused / maintenance. Architecture baseline, Sprint 0 and technical bootstrap are preserved; active implementation and pilot discovery are not currently underway.
 
 ## 1. Executive summary
 
@@ -12,7 +12,7 @@ The product is being designed from a real pilot context rather than as a generic
 
 The current architecture is a modular Laravel monolith with MySQL as the operational source of truth, web/mobile-first workflows, QR context, Telegram as a channel, n8n as an orchestrator and optional aggregated anchoring of audit evidence on Polygon PoS.
 
-**Evidence level:** Architecture baseline + prototype/reference UX + implementation in progress. Not production validated.
+**Evidence level:** Architecture baseline + prototype/reference UX + preserved technical bootstrap. Not production validated.
 
 ## 2. Context
 
@@ -44,7 +44,7 @@ A CRUD-only checklist application does not satisfy this problem definition.
 ## 4. Constraints
 
 - small implementation team;
-- real-world discovery still in progress;
+- real-world discovery to resume when the project is reactivated;
 - mobile-first operational use;
 - mixed digital maturity among users;
 - sensitive documents and personal data;
@@ -230,8 +230,8 @@ Evidence is summarized in [`EVIDENCE.md`](EVIDENCE.md).
 | MVP architecture | Frozen architecture baseline |
 | Golden Flow | Defined, implementation pending |
 | UX prototype | Reference prototype |
-| Pilot discovery | In progress |
-| Modular monolith structure | Architecture baseline / bootstrap in progress |
+| Pilot discovery | Paused / not completed |
+| Modular monolith structure | Architecture baseline / bootstrap preserved |
 | Task + temperature + deviation flow | Planned vertical slice |
 | CAPA and supervisor verification | Domain model defined |
 | Audit ledger | Architecture defined, implementation pending |
@@ -300,4 +300,4 @@ Costa Racini first; generic product abstractions only after repeated patterns ar
 
 ---
 
-This case intentionally distinguishes documented architecture, reference prototypes, implementation progress and future validation. Normia is not presented as production validated at this stage.
+This case intentionally distinguishes documented architecture, reference prototypes, preserved bootstrap work and future validation. Normia is not presented as production validated at this stage.
