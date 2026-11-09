@@ -51,7 +51,7 @@ The following candidates require separate evidence, architecture and sanitizatio
 | Candidate | Editorial status | Proposed architectural focus |
 |---|---|---|
 | Rewi | Candidate — evidence review pending | Laravel SaaS, business isolation, payments, operational flows and deployment gates |
-| Tazario Recipes | Candidate — evidence review pending | React/Hono/Drizzle monorepo, upstream separation, attribution, data boundaries and QA |
+| Tazario Recipes | Candidate — GCP deployment prepared; evidence review pending | React/Hono/Drizzle monorepo, upstream MIT attribution, isolated persistence, documented deployment and pending production validation |
 | DCP Flow | Candidate — evidence review pending | Human + AI engineering governance, context-specific blueprints, skills and quality gates |
 | SipDolce Labs | Candidate — scope review pending | Astro-based editorial architecture, bilingual content and integrations |
 
