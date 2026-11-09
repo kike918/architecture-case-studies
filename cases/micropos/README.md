@@ -17,6 +17,16 @@
 
 Additional evidence and release conditions are tracked in [EVIDENCE.md](EVIDENCE.md). The rest of this document remains the **edge target architecture**, not an implementation inventory.
 
+## Architecture review — constraints, security, trade-offs and open questions
+
+**Context and constraints.** Small merchants have limited budgets, intermittent connectivity and limited capacity to operate hardware. A browser-based commercial acquisition system cannot be reused as proof of a locally resilient sales ledger.
+
+**Security/privacy boundary.** The commercial mini CRM handles prospect data and payment-adjacent workflows; the edge POS would handle local sales records and potentially personal data. Both require scoped access, secret isolation, data retention, auditability and tested recovery suited to their actual deployment. The currently documented web controls must not be projected onto the unimplemented edge architecture.
+
+**Alternatives and trade-offs.** A cloud-only POS reduces hardware maintenance but makes connectivity a runtime dependency. Installing a full ERP on each edge node increases setup and upgrade complexity. A local transaction-first core with optional ERP adapters improves potential continuity but introduces synchronization conflicts, storage wear, reconciliation and support obligations. These remain hypotheses until the pilot.
+
+**Delivery and unresolved questions.** Before accepting an edge pilot, collect exact hardware/software versions, offline-sale and print traces, restart and real restore evidence, duplicate-event tests, backlog reconciliation, operator feedback and failure/rollback results. An architecture diagram and scripts catalogue are not substitutes for these observations.
+
 ## Publication-standard topic map
 
 This case covers the 14 required publication topics across the main document and explicitly linked companions:
