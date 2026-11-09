@@ -52,3 +52,21 @@ Before stronger claims, MicroPOS must demonstrate:
 ## Claim discipline
 
 This case documents a planned architecture and pilot. It must not claim production-grade offline reliability, ERP integration maturity or field-proven Raspberry Pi stability until those outcomes are demonstrated.
+
+## Commercial web vs. edge POS — evidence reconciliation (2026-11-09)
+
+The earlier matrix refers specifically to the **edge POS target**. The commercial `MicroPos-web` implementation must be classified separately:
+
+| Commercial web capability | Read-only source | Evidence boundary |
+|---|---|---|
+| Multilingual static site | `MicroPos-web@dev/README.md` and `ROADMAP.md` | Astro ES/EN/CA documented; published commercial URL; not proof of every live page |
+| Lead/CRM workflow | Same README and roadmap | PHP/SQLite mini CRM, API v1, persisted lead activities; documented implementation |
+| Payments | Same README and roadmap | Manual/partial payments and Bold test/production code paths documented; test approval is **not** proof of arbitrary live production payments |
+| Integration outbox and n8n | Same README and roadmap | Recorded live API/webhook-to-n8n checks in commercial system; **not** evidence for edge POS synchronization |
+| Packaging | `MicroPos-web@dev/HOSTINGER-DEPLOYMENT.md` | INSTALL/UPDATE artifacts and preservation policy documented; package generation does not imply deploy |
+| Raspberry Pi POS | Existing architecture case / `PILOT_PLAN.md` | Planned, no execution results inspected |
+
+**Promotion gates:** verify a dated live commercial release and its smoke tests before broader deployment claims. Complete an independent hardware pilot (sale offline, print, restart, duplicate-safe sync, real restore, ERP reconciliation) before promoting the edge track to Pilot or Deployed.
+
+**Source review is documentary, not a current production health check.**
+
