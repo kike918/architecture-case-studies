@@ -2,7 +2,20 @@
 
 🌐 **Idiomas:** [English](README.md) · Español · [Català](README.ca.md)
 
-**Estado:** Baseline arquitectónico publicado; piloto edge con Raspberry Pi planificado. Los adapters ERP y scripts operativos están definidos como objetivos de implementación, no como capacidades productivas validadas.
+**Estado:** Implementación de web comercial/mini CRM documentada; baseline del POS edge publicado y piloto Raspberry Pi pendiente. Sin afirmación de validación productiva del POS edge.
+
+## Actualización de evidencia — dos líneas distintas de MicroPOS (2026-11-09)
+
+**No confundir la web comercial operativa con el futuro POS edge.** La documentación del repositorio separado `MicroPos-web` registra una web comercial Astro multilingüe, mini CRM PHP/SQLite, API de integración versionada, outbox/webhooks persistentes, pagos manuales y Bold, y pruebas reales de integración con n8n. Son capacidades de la **web comercial y mini CRM**, no del motor POS Raspberry Pi.
+
+| Línea | Evidencia respaldada por los documentos revisados | No demostrado |
+|---|---|---|
+| Web comercial y mini CRM | Astro SSG ES/EN/CA; CRM PHP/SQLite, API v1, contratos de pagos, outbox y pruebas n8n documentadas; web comercial publicada en Hostinger | Auditoría independiente en vivo de todas las funciones, cobro productivo integral, disponibilidad o uso sostenido |
+| POS edge/offline-first | Arquitectura, ADR y plan de pruebas de campo Raspberry Pi | Ventas offline ejecutadas, base POS local resiliente, impresión, recuperación de sincronización, adapters ERP o piloto Raspberry Pi aprobado |
+
+**Relación arquitectónica:** la web comercial captura prospectos y gestiona pagos comerciales; el POS edge proyectado realizaría las ventas del establecimiento localmente. Un lead/pago de la web no equivale a una venta offline del POS. El outbox del CRM web y su validación con n8n no certifican el *outbox de sincronización edge*.
+
+Ver el detalle en [EVIDENCE.es.md](EVIDENCE.es.md). El resto del documento describe la **arquitectura objetivo edge**, no un inventario de implementación.
 
 ## Resumen ejecutivo
 
