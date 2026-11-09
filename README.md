@@ -18,7 +18,7 @@ Each case study focuses on business context, constraints, architectural drivers,
 |---|---|---|
 | [FalconCDT Engagement Platform](cases/falconcdt-engagement/README.md) | Published v1 | White-label engagement, scoring, notifications and operational delivery |
 | [DCP DownloadGate](cases/dcp-downloadgate/README.md) | Published; deployed evidence | Controlled private file distribution, temporary access, protected hosting boundaries and auditability |
-| [MicroPOS](cases/micropos/README.md) | Architecture baseline published; Raspberry Pi pilot planned | Offline-first POS, edge deployment, ERP adapters and low-connectivity resilience |
+| [MicroPOS](cases/micropos/README.md) | Commercial web/mini CRM documented; edge POS baseline published, Raspberry Pi pilot pending | Astro/PHP/SQLite commercial operations and separately proposed offline-first edge POS, ERP adapters |
 | [Normia](cases/normia/README.md) | Architecture baseline published; development paused | Food operations, compliance, corrective actions and verifiable audit trails |
 
 The cases are published progressively. Architecture baselines are not treated as production validation until evidence exists.
