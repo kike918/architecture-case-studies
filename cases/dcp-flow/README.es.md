@@ -4,6 +4,12 @@
 
 **Estado:** Caso público sanitizado de metodología y gobierno de ingeniería. **Clasificación de evidencia:** método documentado y aplicado con evidencias seleccionadas de proyectos; no implica adopción universal, certificación independiente ni mejora de productividad medida.
 
+## Taxonomía de evidencia y cobertura del estándar
+
+DCP Flow es un **caso de metodología**: la madurez de producto se clasifica como **N/A**, nunca Desplegado ni Validado en producción. Su diseño de gobierno está documentado y se registran aplicaciones históricas seleccionadas; no se han cuantificado beneficios de productividad.
+
+**Mapa de 14 temas:** contexto/problema (§2), restricciones (§3), drivers (§4), límites y arquitectura (§5), decisiones/alternativas/trade-offs (§6), entrega/operación (§7), seguridad/privacidad (§8), evidencia (§10 y [registro](EVIDENCE.es.md)), aprendizajes (§11) y preguntas abiertas (§12). La explicación metodológica sustituye justificadamente al diagrama de release de un producto.
+
 ## 1. Resumen ejecutivo
 
 DCP Flow es la metodología versionada de Digital Consulting Plus para transformar problemas empresariales en resultados revisados y respaldados por evidencia, acumulando conocimiento de ingeniería. Su **Engineering System** materializa la dimensión técnica mediante estándares transversales, blueprints por contexto, skills reutilizables, Quality Gates, decisiones documentadas y gobierno de repositorios. Kai puede interpretar y operar el método, pero no constituye una autoridad independiente.
