@@ -17,6 +17,22 @@
 
 Additional evidence and release conditions are tracked in [EVIDENCE.md](EVIDENCE.md). The rest of this document remains the **edge target architecture**, not an implementation inventory.
 
+## Publication-standard topic map
+
+This case covers the 14 required publication topics across the main document and explicitly linked companions:
+
+| Required topic | Where to read it |
+|---|---|
+| Context; problem; constraints; architectural drivers | Executive summary, Problem and [Architecture](ARCHITECTURE.md) |
+| System boundaries; architecture overview | Architecture overview, Core architectural position, [Architecture](ARCHITECTURE.md) |
+| Key decisions; alternatives; trade-offs | Core architectural position, ERP strategy, [Decisions](DECISIONS.md), [ERP strategy](ERP_STRATEGY.md) |
+| Security and privacy | [Architecture](ARCHITECTURE.md), [Evidence](EVIDENCE.md) and project-specific review still required |
+| Delivery and operations | Raspberry Pi pilot, Scripts catalog, [Pilot plan](PILOT_PLAN.md) |
+| Evidence level | Evidence update and [Evidence register](EVIDENCE.md) |
+| Lessons learned; unresolved questions | Distinguish web CRM from edge sync; run the pilot and document open operational questions in [Pilot plan](PILOT_PLAN.md) |
+
+**Canonical level by track:** commercial web **Deployed** for the publicly documented commercial surface, without sustained production validation; edge POS **Concept** with published design and unexecuted pilot. Source-reported implementation is not independently live-audited here.
+
 ## Executive summary
 
 MicroPOS is a lightweight point-of-sale architecture for small businesses and low-connectivity environments. The central hypothesis is that a business should be able to sell, print, close cash, preserve local data and recover from connectivity loss without depending on a continuously available cloud connection.
