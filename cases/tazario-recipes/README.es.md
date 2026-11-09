@@ -2,7 +2,7 @@
 
 🌐 **Idiomas:** [English](README.md) · Español
 
-**Estado:** Candidato en revisión pública (borrador sanitizado). **Nivel de evidencia:** arquitectura y preparación de despliegue documentadas; despliegue productivo y operación sostenida **no verificados**. El código del producto permanece privado.
+**Estado:** Caso de arquitectura sanitizado publicado (revisión humana de divulgación aprobada el 2026-11-09). **Nivel de evidencia:** arquitectura y preparación de despliegue documentadas; despliegue productivo y operación sostenida **no verificados**. El código del producto permanece privado.
 
 ## 1. Resumen ejecutivo
 
@@ -122,4 +122,4 @@ El resultado concreto es una arquitectura de producto documentada y un procedimi
 
 ## Nota de publicación
 
-Este texto es un caso sanitizado propuesto. No reproduce código propietario, valores internos de infraestructura, datos personales, rutas internas, secretos, registros de clientes ni detalles sensibles de seguridad. Antes de integrarlo al portafolio público requiere revisión humana de evidencia y sanitización.
+Este es un caso sanitizado publicado. No reproduce código propietario, valores internos de infraestructura, datos personales, rutas internas, secretos, registros de clientes ni detalles sensibles de seguridad. La aprobación humana de publicación se otorgó el 2026-11-09; las evidencias técnicas pendientes continúan explícitamente sin verificar.
